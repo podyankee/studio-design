@@ -1,0 +1,205 @@
+.main-head
+	+clearfix
+	.header-left
+		width: 69%
+		height: 500px
+		position: relative
+		float: left
+		
+		.logo-wrapper
+			position: absolute
+			left: 168px
+			top: 50px
+
+		.logo-text-wrapper
+			color: #393d3c
+			font-size: em(18px)
+			line-height: em(18px)
+			text-transform: uppercase
+			position: absolute
+			top: 260px	
+			left: 170px
+	
+			p
+				margin-top: 2px
+				margin-bottom: 0
+				color: #393d3c
+
+		.social-icons
+			position: absolute
+			top: 370px
+			left: 175px
+			width: 125px
+			ul, li
+				margin: 0
+				padding: 0
+				list-style-type: none
+
+			li
+				display: inline-block
+				font-size: em(26px)
+				margin-right: 15px
+
+				a
+					color: #7bcbc1
+		.chear
+			position: absolute
+			left: 403px
+			bottom: -3px
+
+	.header-right
+		float: right
+		width: 31%
+		height: 500px
+		background-color: #7acec3
+		position: relative
+		
+
+		.text-top, .text-bottom
+			color: #fff
+			font-size: 13px
+			line-height: 14px
+			text-transform: uppercase
+			position: absolute
+			
+
+		.text-top
+			bottom: 171px
+			left: 60px
+
+			p
+				margin-top: 1px
+				margin-bottom: 0
+		
+		.text-bottom
+			bottom: 100px
+			left: 136px
+
+
+			a
+				margin-top: 2px
+				margin-bottom: 0
+				color: #fff
+				font-size: 13px
+				line-height: 14px
+				text-transform: uppercase
+				text-decoration: none
+				transition: all 0.25 ease
+				&:hover
+					color: #ebb240
+	
+		.diagonal
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			right: 0
+			
+.toggle_mnu 
+	width: 125px
+	height: 120px
+	float: right
+	position: fixed
+	right: 166px
+	top: 50px
+	z-index: 100
+	outline: 3px solid #e9eae2
+	border: 0
+	background-color: #7acec3
+	transition: all 0.5s ease
+	
+	&.active
+		background-color: #f8c255
+		border: 0
+		outline: 0
+	
+		&:hover 
+			background-color: #f0a309
+		
+	
+	
+		
+.sandwich 
+	width: $w
+	height: $h
+	position: absolute
+	top: 50px
+	left: 35px
+	bottom: 0
+	right: 0
+
+.sw-topper, .sw-footer, .sw-bottom 
+	position: relative
+	width: $w
+	height: $h
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	display: block
+
+
+.sw-topper 
+	top: 0
+	transition: transform 0.5s, top 0.2s
+
+
+.sw-bottom 
+	top: $h
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+
+
+.sw-footer 
+	top: $h * 2
+	transition: all 0.5s
+	transition-delay: 0.1s
+
+
+.sandwich.active 
+	.sw-topper 
+		top: 9px
+		transform: rotate(-45deg)
+  
+	.sw-bottom 
+		top: 6px
+		transform: rotate(45deg)
+  
+	.sw-footer 
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+  
+
+
+.top_mnu 
+	display: none
+	position: relative
+
+	
+	ul,li 
+		list-style: none
+		margin: 0
+		padding: 0
+	
+	ul 
+		position: absolute
+		top: 50px
+		left: -430px
+	
+	li 
+		float: left
+	
+	a 
+		color: #fff
+		padding: 52px 40px
+		background-color: #f8c255
+		display: inline-block
+		text-decoration: none
+		transition: all 0.5s ease
+		&:hover 
+			background-color: #f0a309
+		
+	
+
+
+      
