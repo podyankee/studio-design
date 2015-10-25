@@ -85,14 +85,14 @@ gulp.task('js', function() {
 gulp.task('sass', function () {
     return gulp.src('assets/css/main.scss')
 		.pipe(customPlumber('Error Running Sass'))
-		//.pipe(sourcemaps.init())
+		.pipe(sourcemaps.init())
         .pipe(sass({
 			outputStyle: sassStyle,
             includePaths: ['css'],
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-		//.pipe(sourcemaps.write())
+		.pipe(sourcemaps.write())
         .pipe(gulp.dest('_site/assets/css'))
 		.pipe(gulp.dest('assets/css'))
         .pipe(browserSync.reload({stream:true}));
@@ -131,7 +131,7 @@ gulp.task('images', function() {
  */
 gulp.task('watch', function () {
 	gulp.watch('assets/js/*.js', ['js']);
-    gulp.watch('assets/css/**', ['sass']);
+    gulp.watch('assets/css/**/*.sass', ['sass']);
     gulp.watch(['index.html', '_layouts/*.html', '_includes/*'], ['jekyll-rebuild']);
     gulp.watch(['_jadefiles/*.jade'], ['jade']);
     gulp.watch(['assets/img/**/*.*'], ['images']);

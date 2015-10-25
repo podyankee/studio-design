@@ -12,11 +12,11 @@ $(".top_mnu ul a").click(function() {
 
 	$(".toggle_mnu").click(function() {
 		if ($(".top_mnu").is(":visible")) {
-			$(".top_text").css("opacity", "1");
+			$(".text-top").css("opacity", "1");
 			$(".top_mnu").fadeOut(600);
 			$(".top_mnu li a").removeClass("fadeInUp animated");
 		} else {
-			$(".top_text").css("opacity", ".1");
+			$(".text-top").css("opacity", ".1");
 			$(".top_mnu").fadeIn(600);
 			$(".top_mnu li a").addClass("fadeInUp animated");
 		};

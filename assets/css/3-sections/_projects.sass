@@ -1,0 +1,368 @@
+section.projects
+	position: relative
+	+clearfix
+	.projects-nav
+		position: relative
+		height: 500px
+		width: 31%
+		background-color: #ebb240
+		float: left
+
+		
+		.nav
+			position: absolute
+			left: 31.483%
+			top: 34.4%
+			z-index: 5
+	
+			a::after
+				content: ''
+				width: 19px
+				height: 15px
+				position: absolute
+				left: -28px
+				top: 0
+				background-image: url(../img/arrow-icon.png)
+				display: none
+	
+			a:hover
+				&::after
+					display: inline-block
+					
+			a.house
+					&::after
+						left: -28px
+						top: 17px
+			a.commercial
+					&::after
+						left: -28px
+						top: 33px
+			a.personal
+					&::after
+						left: -28px
+						top: 49px
+			a.studio
+					&::after
+						left: -28px
+						top: 65px
+
+.text-bottom
+	h2
+		color:#fefefe
+		font-size: 48px
+		line-height: 14px
+		text-transform: uppercase
+		position: absolute
+		top: 290px
+		left: 175px
+		font-weight: 400
+
+.fondue
+	float: left
+	width: 38%
+	height: 500px
+	position: relative
+
+	h3
+		color: #333
+		font-size: 24px
+		font-weight: 300
+		line-height: 14px
+		text-transform: uppercase
+		font-family: RobotoCondensedLight, $helvetica
+		margin-bottom: 20px
+	.prog-descr
+		position: absolute
+		right: 101px
+		left: 75px
+		top: 60px
+			
+		.div
+			color: #333
+			font-size: 12px
+			font-weight: 300
+			line-height: 12px
+			text-transform: uppercase
+			span
+				color: #848484
+	
+		a
+			left: 30px
+			top: 258px
+
+			&:after
+				left: -28px
+				top: 0
+
+		.like
+			top: 326px
+			left: 50px
+
+			img
+				margin-bottom: 5px
+
+
+	.lamp
+		position: absolute
+		left: 240px
+		top: 0
+
+.potter
+	float: left
+	position: relative
+	background-color: #dfe0d9
+	height: 250px
+	width: 31%
+	
+	.prog-descr
+		margin-top: 35px
+		margin-left: 10px
+		position: relative
+		z-index: 100
+	
+		h3
+			margin-top: 0
+	
+		div
+			color: #333
+			font-family: RobotoCondensedLight
+			font-size: 12px
+			line-height: 12px
+
+		.up
+			text-transform: uppercase
+			margin: 0
+		
+			span
+				font-family: RobotoCondensedBold
+	
+		a
+			top: 115px
+			left: 30px
+		
+		.like
+			top: 157px
+			left: 63px
+
+.potter-img
+	position: absolute
+	top: 20px
+	left: 200px
+
+.tabano
+	height: 465px
+	width: 31%
+	background-color: #e9eae2
+	float: left
+	position: relative
+
+	h3
+		margin-bottom: 17px
+
+	.prog-descr
+		margin-top: 340px
+		margin-left: 60px
+		position: relative
+		
+		a
+			position: absolute
+			top:34px
+			left: 190px
+
+		.like
+			top: 34px
+			left: 310px
+
+.tabano-img
+	position: absolute
+	top: 30px
+	left: 95px
+				
+
+.louis
+	float: left
+	width: 19.93%
+	height: 465px
+	background-color: #76838c
+	position: relative
+	margin-top: -215px
+	z-index: 1000
+
+	.prog-descr
+		margin-left: 30px
+		margin-top: 40px
+
+		div, span, h3, a
+			color: #f3f5f6
+		
+		span
+			font-family: RobotoCondensedLight
+
+		a
+			margin-top: 35px
+			margin-left: 25px
+
+		.like
+			top: 205px
+			left: 100px
+
+.louis-img
+	position: absolute
+	left: 40px
+	top: 160px
+
+.payhic	
+	float: left
+	margin-top: -215px
+	background-color: #e9eae2
+	height: 465px
+	width: 49.067%	
+	position: relative
+
+	.prog-descr
+		position: absolute
+		left: 350px
+		top: 68px
+
+	a
+		color: #333
+		font-family: RobotoCondensedLight
+		font-size: 18px
+		line-height: 12px
+		text-transform: uppercase
+		text-decoration: none
+		position: absolute
+		top: 100px
+		left: 530px
+
+		&:after
+			content: ''
+			width: 19px
+			height: 15px
+			position: absolute
+			left: -28px
+			top: 0
+			background-image: url(../img/arrow-icon-or.png)
+		
+	.like
+		position: absolute
+		left: 555px
+		top: 140px
+
+		img
+			margin-bottom: 5px
+
+		.score
+			color: red
+			font-size: 11px
+			line-height: 12px
+			text-transform: uppercase
+			font-family: RobotoCondensedLight
+
+.payhic-img
+	position: absolute
+	top: 75px
+	left: 100px
+
+.fiji
+	width: 31%
+	height: 251px
+	float: left
+	position: relative
+
+	.prog-descr
+		margin-left: 255px
+		margin-top: 50px
+
+		.like
+			top: 163px
+			left: 317px
+		a
+			top: 135px
+			left: 285px
+
+	.fiji-img
+		position: absolute
+		top: 33px
+		left: 33px
+
+.sesann
+	width: 49%
+	height: 300px
+	float: left
+	position: relative
+	
+	.sesann-img
+		position: absolute
+		left: 100px
+		top: 26px
+
+	.prog-descr
+		margin-left: 140px
+		margin-top: 200px
+	
+	a
+		color: #333
+		font-family: RobotoCondensedLight
+		font-size: 18px
+		line-height: 12px
+		text-transform: uppercase
+		text-decoration: none
+		position: absolute
+		top: 230px
+		left: 375px
+
+		&:after
+			content: ''
+			width: 19px
+			height: 15px
+			position: absolute
+			left: -28px
+			top: 0
+			background-image: url(../img/arrow-icon-or.png)
+		
+	.like
+		position: absolute
+		left: 525px
+		top: 228px
+
+		img
+			margin-bottom: 5px
+
+		.score
+			color: red
+			font-size: 11px
+			line-height: 12px
+			text-transform: uppercase
+			font-family: RobotoCondensedLight
+		
+
+.alessi
+	width: 20%
+	height: 300px
+	background-color: #cecece
+	float: left
+	position: relative
+
+	.prog-descr
+		position: absolute
+		left: 150px
+		top: 70px
+		
+		a
+			position: absolute
+			top: 117px
+			z-index: 100
+
+		.like
+			margin-top: 60px
+
+	.alessi-img
+		position: absolute
+		top: 70px
+		
+	
+
+
+
+
