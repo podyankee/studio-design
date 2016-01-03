@@ -1,0 +1,71 @@
+section.news
+	background-color: #e5e9df
+	height: 500px
+	.news-logo
+		+size(31% 500px)
+		background-color: #d4edbf
+		float: left
+		position: relative
+
+		h2
+			color:#fefefe
+			font-size: 48px
+			line-height: 14px
+			text-transform: uppercase
+			position: absolute
+			top: 295px
+			left: 217px
+			font-weight: 400
+
+.news-items
+	margin: 0
+	padding: 0
+	width: 932px
+	float: left
+	
+	.news-item
+		width: 50%
+		max-width: 370px
+		float: left
+		margin-left: 100px
+		text-align: justify
+		font-family: "RobotoCondensedRegular", $helvetica
+		font-size: em(12px)
+		line-height: em(24px)
+		margin-top: 80px
+		
+		&:last-child
+			margin-left: 30px
+		
+
+		h3
+			font-size: 24px
+			line-height: 24px
+			text-transform: uppercase
+			margin-top: 0
+			margin-bottom: 2px
+
+		p
+			color: #6a6969
+
+		.date
+			margin-top: 0
+			margin-bottom: 18px
+		
+		.date2
+			margin-top: 0
+			margin-bottom: 41px
+		
+		.main
+			margin-top: 20px
+			margin-bottom: 10px
+
+		.read-more
+			text-decoration: none
+			color: #fd5000
+			text-transform: uppercase
+			float: right
+		
+			&:hover
+				color: darken(#fd5000, 20%)
+			
